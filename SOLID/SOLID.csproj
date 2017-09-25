@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{502C0082-066D-406C-A121-501067BBBE50}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SOLID</RootNamespace>
+    <AssemblyName>SOLID</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Rest, Version=1.1.0.5340, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spring.Rest.1.1.0\lib\net40\Spring.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01 - Single Responsibility Principle\Code Example\Bad Design\JournalBadDesign.cs" />
+    <Compile Include="01 - Single Responsibility Principle\Code Example\Good Design\Journal.cs" />
+    <Compile Include="01 - Single Responsibility Principle\Code Example\Good Design\Persistence.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\ProductFilter.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\Specifications\AndSpecification.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\Specifications\SizeSpecification.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Product.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Bad Design\ProductFilterBadDesign.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Color.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\Specifications\ColorSpecification.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\Interfaces\IFilter.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Good Design\Interfaces\ISpecification.cs" />
+    <Compile Include="02 - Open Close Principle\Code Example\Size.cs" />
+    <Compile Include="03 - Liskov Substitution Principle\Code Example\Bad Design\RectangleBadDesign.cs" />
+    <Compile Include="03 - Liskov Substitution Principle\Code Example\Bad Design\SquareBadDesign.cs" />
+    <Compile Include="03 - Liskov Substitution Principle\Code Example\Good Design\Rectangle.cs" />
+    <Compile Include="03 - Liskov Substitution Principle\Code Example\Good Design\Square.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Document.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Bad Design\IMachine.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Bad Design\MultiFunctionPrinter.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Bad Design\OldFashionedPrinter.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\IFax.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\IMultiFucntionDevice.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\IPrinter.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\IScanner.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\MultiFunctionMachine.cs" />
+    <Compile Include="04 - Interface Segregation Principle\Code Example\Good Design\Photocopier.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Good Design\IRelationshipBrowser.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Good Design\Relationships.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Good Design\Research.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Person.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Bad Design\RelashionshipsBadDesign.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Relationship.cs" />
+    <Compile Include="05 - Dependency Inversion Principle\Code Example\Bad Design\ResearchBadDesign.cs" />
+    <Compile Include="Launcher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="01 - Single Responsibility Principle\Notes.txt" />
+    <Content Include="01 - Single Responsibility Principle\UML Examples\SRP_Automobile.jpg" />
+    <Content Include="02 - Open Close Principle\UML Examples\OCP_InstrumentSpec.jpg" />
+    <Content Include="App_Readme\Spring.Rest.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

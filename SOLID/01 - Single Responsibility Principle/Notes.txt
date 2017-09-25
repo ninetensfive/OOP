@@ -1,0 +1,5 @@
+﻿-Module should be responsible to one role.
+-Separate the thing which change for different reasons and 
+group together the things that change for the same reason.
+-The class should have one reason to change (If more than one reason two change(business logic, view, database layer etc) in 
+one class(module) this is not Single Responsibility).
