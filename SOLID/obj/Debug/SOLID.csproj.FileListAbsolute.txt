@@ -1,8 +1,0 @@
-D:\PROJECTS\OOP\SOLID\bin\Debug\SOLID.exe.config
-D:\PROJECTS\OOP\SOLID\bin\Debug\SOLID.exe
-D:\PROJECTS\OOP\SOLID\bin\Debug\SOLID.pdb
-D:\PROJECTS\OOP\SOLID\obj\Debug\SOLID.csprojResolveAssemblyReference.cache
-D:\PROJECTS\OOP\SOLID\obj\Debug\SOLID.exe
-D:\PROJECTS\OOP\SOLID\obj\Debug\SOLID.pdb
-D:\PROJECTS\OOP\SOLID\bin\Debug\System.ValueTuple.dll
-D:\PROJECTS\OOP\SOLID\bin\Debug\System.ValueTuple.xml
